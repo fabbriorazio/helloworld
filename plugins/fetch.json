@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-browsersync-gen2": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/CatchABus/cordova-plugin-browsersync-gen2.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

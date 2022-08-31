@@ -1,0 +1,18 @@
+.body-with-fixed-footer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.main-with-fixed-footer {
+    flex: 1 0 auto;
+}
+.d-block {
+    display:block !important;
+}
+.d-none {
+    display:none !important;
+}
+.brand-logo img {
+    max-height: 64px !important;
+    margin-top: 6px;
+}

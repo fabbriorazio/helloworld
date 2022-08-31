@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval' ws: 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <title>Hello World</title>        
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <!--https://materializecss.com-->
+        <link rel="stylesheet" href="css/materialicons.css">
+        <link rel="stylesheet" href="css/materialize.min.css">        
+        <script src="js/materialize.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <style>
+            
+        </style>
+    </head>
+    <body class="body-with-fixed-footer">
+
+        <nav class="blue darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo"><img src="img/logo.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Navbar Link</a></li>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger d-block"><i class="material-icons">menu</i>x</a></li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Sidenav Link</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">                    
+                    <a href="#user"><img class="circle" src="img/logo.png"></a>
+                    <a href="#name"><span class="name">John Doe</span></a>
+                    <a href="#email"><span class="email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+        
+        <div class="main-with-fixed-footer container">
+            <div class="section">                
+                <div class="row">
+                    <div id="listening" class="col s12 grid-example red darken-3" style="color: rgba(255, 255, 255, 0.9);">
+                        <span class="flow-text">
+                            Connecting to Device...waiting
+                        </span>
+                    </div>    
+                    <div id="deviceready" class="col s12 m6" style="display:none;">
+                        <div class="center">
+                            <h2 class="center"><i class="large material-icons blue-text text-darken-4">verified_user</i></h2>
+                            <h3>Verifica codice</h3>
+                            <p class="light center">weqwe qwewq ewq eqw eqw eqwewq ewqeq we qwe q eqw eq eqwewqewwqe qweqwe qweqwe qwe qwe qw.</p>
+                            <a class="btn waves-effect blue darken-4 pulse" name="bottone_verifica_codice" onclick="verificaCodice();"><i class="material-icons right">verified_user</i>button</a>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="center">
+                            <h2 class="center light-blue-text"><i class="large material-icons blue-text text-darken-4">check_circle</i></h2>
+                            <h3>Aggiorna codice</h3>
+                            <p class="light center">weqwe qwewq ewq eqw eqw eqwewq ewqeq we qwe q eqw eq eqwewqewwqe qweqwe qweqwe qwe qwe qw.</p>
+                            <p><a class="btn waves-effect blue darken-4 pulse"><i class="material-icons right">check_circle</i>button</a></p>
+                        </div>
+                    </div>   
+                    <div class="col s12">                        
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="img/carousel/1.png"></a>
+                            <a class="carousel-item" href="#two!"><img src="img/carousel/2.png"></a>
+                            <a class="carousel-item" href="#three!"><img src="img/carousel/3.png"></a>
+                            <a class="carousel-item" href="#four!"><img src="img/carousel/4.png"></a>
+                            <a class="carousel-item" href="#five!"><img src="img/carousel/5.png"></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer blue darken-4 no-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 s12">
+                        <h5 class="center white-text">link1</h5>
+                    </div>
+                    <div class="col l4 s12">
+                        <h5 class="center white-text">link2</h5>
+                    </div>
+                    <div class="col l4 s12">
+                        <h5 class="center white-text">link3</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container center">
+                    Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
