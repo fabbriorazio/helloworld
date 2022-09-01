@@ -15,8 +15,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "Compilazione"
+          command: "echo Inizio compilazione Android APK"
           command1: "npm run build"
 
 # Invoke jobs via workflows
